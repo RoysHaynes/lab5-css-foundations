@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Super AI Dash Login</title>
+    <style>
+        h1{
+            color: blue;
+            font-size: 2.5rem;
+        }
+        form-field{
+            display: block;
+        }
+        #login-form{
+            background-color: blue;
+        }
+        #login-info{
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+<section id="login-info">
+    <h1>
+        Super Ai Dash
+    </h1>
+    <p>
+        AI powered finance from Apes, alt coins, and flat currency, we promise you won't lose <b><i>all</i></b> of it.
+    </p>
+</section>
+
+<section id="login-form">
+    <form action="login.php" method="post">
+        <form-field>
+            <label for="emailField"><b>Email Address</b></label>
+            <input type="email" name="email" placeholder="you@example.com" id="emailField" autofocus required>
+        </form-field>
+
+        <form-field>
+            <label for="passwordField"><b>Password</b></label>
+            <input type="email" name="email" placeholder="Enter your password" id="passwordField" required>
+        </form-field>
+
+        <form-field>
+            <button type="submit">Sign in</button>
+        </form-field>
+
+        <password-recovery>
+            <a href="forgot.php"> Forgot Password</a>
+        </password-recovery>
+    </form>
+</section>
+</body>

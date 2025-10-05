@@ -6,18 +6,16 @@
     --panel:#ffffff;
     --radius: 0.875rem;
     --shadow: 0 12px 34px rgba(0,0,0,.5);
-
-
+    --field-border:#d1d5db;
+    --muted:#6b7280;
+    --primary:#2563eb;
 }
 
-/*Format*/
 *{box-sizing: border-box; margin: 0; padding: 0;}
-html, body{ height:100%; }
-body{
-    font:400 1rem/1.5 "Helvetica Neue",Helvetica,Arial,sans-serif;
-    color:var(--text);
-    background:var(--bg);
 
+body{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
     /*2 column layout*/
     display: grid;
     grid-template-columns: minmax(280px, 1fr) minmax(420px, 1.2fr);
@@ -42,8 +40,7 @@ body{
     color:white;
     font-size:clamp(2rem,5vw,3rem);
     line-height:1.15;
-    letter-spacing:2px;
-    margin-top:.75rem;
+
 }
 #login-info p{
     max-width:42ch;
@@ -61,5 +58,55 @@ body{
             0 -12px 34px -12px rgba(0,0,0,.12),
             12px 0 34px -12px rgba(0,0,0,.12),
             0 12px 34px -12px rgba(0,0,0,.12);
+}
+
+form{
+    width:100%;
+    display:grid;
+    grid-template-columns:1fr auto;
+    gap:1rem 1rem;
+}
+
+form-field{grid-column: 1/-1;}
+
+label{
+    display:inline-block;
+    font-weight:600;
+    font-size:1rem;
+    margin-bottom:.5rem;
+}
+input[type="email"],input[type="password"]{
+    width:100%;
+    padding:1rem 1rem;
+    border: 1px solid var(--field-border);
+    border-radius:.7rem;
+    font-size:1rem;
+    background:#ffffff;
+}
+input::placeholder{color:darkgray}
+
+input:focus{
+   outline:none;
+}
+
+form-field:last-of-type{
+    grid-column:1;
+    align-self: center;
+}
+password-recovery{
+    color:var(--muted);
+    font-size:1rem;
+    text-decoration:none;
+}
+
+button[type="submit"]{
+    background: var(--primary);
+    color: #fff;
+    border: 0;
+    padding: .85rem 1.25rem;
+    border-radius: .7rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color .2s ease, transform .05s ease;
 }
 

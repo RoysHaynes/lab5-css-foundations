@@ -5,8 +5,8 @@ This lab practices HTML and CSS by trying to replicate the replication.png pictu
 Using progressive enhancement I started with all the HTML and worked my way to CSS.
 
 ## Live Site
-**GitHub Pages:** https://<your-username>.github.io/lab5-css-foundations/  
-_(Replace `<your-username>` with your GitHub handle.)_
+**GitHub Pages:** https://Royshaynes.github.io/lab5-css-foundations/  
+
 
 ## Project Goals
 - Two-column layout (brand panel left, form panel right) using **CSS Grid**.
